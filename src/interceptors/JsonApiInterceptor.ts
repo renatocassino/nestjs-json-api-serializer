@@ -6,7 +6,7 @@ import { tap } from 'rxjs/operators';
 export class JsonApiInterceptor implements NestInterceptor {
   private context: ExecutionContext | undefined;
 
-  getRelationsFromItem(item: any) {
+  getRelationsFromItem(item: any): any {
     const { query } = this.context!.switchToHttp().getRequest();
 
     const fields = new Set((query['fields'] || '').split(','));
