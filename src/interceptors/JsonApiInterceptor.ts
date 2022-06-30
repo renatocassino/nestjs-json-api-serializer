@@ -1,4 +1,6 @@
-import { Injectable, NestInterceptor, ExecutionContext, CallHandler } from '@nestjs/common';
+import {
+  Injectable, NestInterceptor, ExecutionContext, CallHandler,
+} from '@nestjs/common';
 import { Observable } from 'rxjs';
 import { tap } from 'rxjs/operators';
 
@@ -9,7 +11,7 @@ export class JsonApiInterceptor implements NestInterceptor {
   getRelationsFromItem(item: any): any {
     const { query } = this.context!.switchToHttp().getRequest();
 
-    const fields = new Set((query['fields'] || '').split(','));
+    const fields = new Set((query.fields || '').split(','));
     fields.delete('');
 
     const response = Object.entries(item).reduce((accum, curr) => {
@@ -27,7 +29,6 @@ export class JsonApiInterceptor implements NestInterceptor {
       }
 
       return accum;
-
     }, {});
 
     return Object.keys(response).length === 0 ? undefined : response;
@@ -35,7 +36,7 @@ export class JsonApiInterceptor implements NestInterceptor {
 
   getAttributesFromItem(item: any) {
     const { query } = this.context!.switchToHttp().getRequest();
-    const fields = new Set((query['fields'] || '').split(','));
+    const fields = new Set((query.fields || '').split(','));
     fields.delete('');
 
     return Object.entries(item).reduce((accum, curr) => {
@@ -65,7 +66,7 @@ export class JsonApiInterceptor implements NestInterceptor {
       id: item.id,
       attributes: this.getAttributesFromItem(item),
       relations: this.getRelationsFromItem(item),
-    }
+    };
   }
 
   buildItems(items: any[]) {
