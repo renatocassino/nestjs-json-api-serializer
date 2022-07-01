@@ -6,6 +6,7 @@
 
 [![Commitizen friendly](https://img.shields.io/badge/commitizen-friendly-brightgreen.svg)](http://commitizen.github.io/cz-cli/)
 [![Maintenance](https://img.shields.io/badge/Maintained%3F-yes-green.svg)](https://GitHub.com/Naereen/StrapDown.js/graphs/commit-activity)
+[![Coverage Status](https://coveralls.io/repos/github/renatocassino/nest-json-api-serializer/badge.svg?branch=master)](https://coveralls.io/github/renatocassino/nest-json-api-serializer?branch=main)
 [![Npm package version](https://badgen.net/npm/v/nestjs-json-api-serializer)](https://npmjs.com/package/nestjs-json-api-serializer)
 
 <p align="center">
