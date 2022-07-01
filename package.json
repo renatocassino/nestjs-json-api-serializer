@@ -1,7 +1,7 @@
 {
-  "name": "@nestjs-modules/json-api-serializer",
+  "name": "nestjs-json-api-serializer",
   "version": "0.0.0",
-  "description": "Nest serializer to use with jsonapi.org pattern",
+  "description": "Nestjs serializer to use with jsonapi.org pattern",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "scripts": {

@@ -13,13 +13,13 @@
 Run in your terminal
 
 ```bash
-$ npm install --save @nestjs-modules/json-api-serializer
+$ npm install --save nestjs-json-api-serializer
 ```
 
 or via yarn
 
 ```bash
-$ yarn add @nestjs-modules/json-api-serializer
+$ yarn add nestjs-json-api-serializer
 ```
 
 ## Getting started
@@ -30,7 +30,7 @@ import {
   Get,
   UseInterceptors,
 } from '@nestjs/common';
-import { JsonApiInterceptor } from '@nestjs-modules/json-api-serializer';
+import { JsonApiInterceptor } from 'nestjs-json-api-serializer';
 
 @Controller('v1/cats')
 export class CatsController {
