@@ -10,12 +10,13 @@
     "sourceMap": false,
     "outDir": "./dist",
     "rootDir": "./src",
-    "baseUrl": "./",
+    "baseUrl": "./src",
     "allowJs": false,
     "noLib": false,
     "lib": ["es2021"],
-    "types": ["node"]
+    "types": ["node", "jest"],
+    "typeRoots": ["node_modules/@types"]
   },
   "include": ["src/**/*.ts"],
-  "exclude": ["node_modules"]
+  "exclude": ["node_modules", "dist"]
 }
