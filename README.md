@@ -5,6 +5,8 @@
 </p>
 
 [![Commitizen friendly](https://img.shields.io/badge/commitizen-friendly-brightgreen.svg)](http://commitizen.github.io/cz-cli/)
+[![Maintenance](https://img.shields.io/badge/Maintained%3F-yes-green.svg)](https://GitHub.com/Naereen/StrapDown.js/graphs/commit-activity)
+[![Npm package version](https://badgen.net/npm/v/nestjs-json-api-serializer)](https://npmjs.com/package/nestjs-json-api-serializer)
 
 <p align="center">
   A lib to NestJS to serializer JSON following the <a href="https://jsonapi.org/">JSON Api</a> pattern.
